@@ -1,16 +1,60 @@
+'use client';
 import React from "react";
 // import ProjectCard from "../sub/ProjectCard";
 import Spectexarenda from "../../public/spectexarenda.png"
 import Image from "next/image";
+import IproWeb from "@/assets/images/IproWeb.png"
+import Clinick from "@/assets/images/clinick.png"
+import Qshostel from "@/assets/images/qshostel.png"
+import Commoncountry from "@/assets/images/CommonCountry.png"
+import Chipdip from "@/assets/images/Chip-dip.png"
+import Ecomerence from "@/assets/images/E-comerence.png"
+import Exploreasia from "@/assets/images/ExploreAsia.png"
+import Gifpro from "@/assets/images/GifPro.png"
+import Hajjumrah from "@/assets/images/Hajj-umrah.png"
+import Island from "@/assets/images/Island.png"
+import valuecommon from "@/assets/images/valuecommon.png"
+import weather from "@/assets/images/WeatherPro.png"
+import zetmarket from "@/assets/images/Zetmarket.png"
 
 const Projects = () => {
 
   const projectsData = [
-    { title: 'Project', description: 'mobileApps', img:Spectexarenda, },
-    { title: 'Project', description: 'mobileApps' },
-    { title: 'Project', description: 'socialMedia' },
-    { title: 'Project', description: 'dataDriven' },
+    {
+      title: 'Projects',
+      description: 'webApps',
+      images: [
+        { img: IproWeb, link: 'https://iproweb.netlify.app/' },
+        { img: Clinick, link: 'https://clinic78.netlify.app/' },
+        { img: Qshostel, link: 'https://hotelweb77.netlify.app/' },
+        { img: Commoncountry, link: 'https://countrycommon.netlify.app/' },
+        { img: Chipdip, link: 'https://chip-dip-project.netlify.app/' },
+      ],
+    },
+    {
+      title: 'Projects',
+      description: 'eCommerce',
+      images: [
+        { img: Ecomerence, link: 'https://ecomerence12.netlify.app/' },
+        { img: Exploreasia, link: 'https://exploreasia.netlify.app/' },
+        { img: Gifpro, link: 'https://gifproject2.netlify.app/' },
+        { img: Hajjumrah, link: 'https://reacthajj.netlify.app/' },
+        { img: Island, link: 'https://beatiful-island02.netlify.app/' },
+      ],
+    },
+    {
+      title: 'Projects',
+      description: 'utilities',
+      images: [
+        { img: valuecommon, link: 'https://valuecurrency.netlify.app/' },
+        { img: weather, link: 'https://weatherdash0.netlify.app/' },
+        { img: zetmarket, link: 'https://zetmarket1122.netlify.app/' },
+        { img: Spectexarenda, link: 'https://kranuz.netlify.app/' },
+        { img: Clinick, link: '#' },
+      ],
+    },
   ];
+
 
   return (
     <>
@@ -36,24 +80,24 @@ const Projects = () => {
             </div>
 
             <div className="flex items-center gap-0 overflow-hidden -space-x-14 md:-space-x-36">
-              {[1, 2, 3, 4, 5].map((_, i) => (
+              {project.images.map((item, i) => (
                 <div
                   key={i}
-                  // onClick={() => handleNavigate(t(project.title))}
+                  onClick={() => window.open(item.link, '_blank')}
                   className="relative w-full md:h-[198px] left-20 shadow-lg rounded-[20px] transition-transform duration-300 cursor-pointer hover:translate-x-6 group"
                 >
                   <Image
-                    src={Spectexarenda}
+                    src={item.img}
                     className="md:h-full h-28 w-full object-cover rounded-[20px]"
                     alt={`${project.title} ${i}`}
                   />
-
                   <div className="absolute inset-0 bg-gray-900 bg-opacity-50 group-hover:bg-opacity-0 transition-all duration-300 rounded-[20px]"></div>
                 </div>
               ))}
             </div>
           </div>
         ))}
+
 
       </div>
     </>
