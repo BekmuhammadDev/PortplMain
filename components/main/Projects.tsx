@@ -14,7 +14,7 @@ const Projects = () => {
 
   return (
     <>
-      <div className="container mx-auto mb-44 px-5 xl:px-14 z-40">
+      <div className="container mx-auto mb-44 px-5 xl:px-14 z-40" id="projects">
         <h1
           className="text-white md:text-[108px] text-[48px] uppercase font-black ml-5 mb-10 text-center md:text-left"
         >

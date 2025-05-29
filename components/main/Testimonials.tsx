@@ -6,19 +6,19 @@ const testimonials = [
   {
     name: "Javohir",
     image: "/images/javlonbek.jpg",
-    text: "Bekmuhammad bilan birgalikda ishlash katta zavq. U doimo yangilikka ochiq va jamoa bilan yaxshi ishlaydi.",
+    text: "Bekmuhammad bilan biz, hazilashardik,bir birimizga yordam berar edik,maslaxatlashardik, va jamoa bo'lib ishlar edik.",
     rating: 5,
   },
   {
     name: "E'zoza",
     image: "/images/dilnoza.jpg",
-    text: "Uning frontendga bo‘lgan yondashuvi juda professional. Har doim toza va optimallashtirilgan kod yozadi.",
+    text: "Bekmuhammadning frontendga bo‘lgan yondashuvi juda yaxshi. Biz birgalikda juda ko'p loyihalarda Frontend va Beckendni muvafaqiyatli integratsiya qilganmiz",
     rating: 5,
   },
   {
     name: "Dostonbek",
     image: "/images/shahzod.jpg",
-    text: "Bekmuhammad jamoa ichidagi aloqa va hamkorlikda juda kuchli. Mas'uliyatli va halol inson.",
+    text: "Bekmuhammad aka bilan biz huddi aka-ukadek bo'lib qolganmiz,biz birgalikda ko'plab loyihalarda muvafaqiyatli qatnashdik.",
     rating: 5,
   },
 ];
