@@ -11,8 +11,9 @@ const Contact = () => {
                     Get in Touch
                 </h2>
                 <p className="text-center text-white mb-10">
-                    I'd love to hear from you! Fill out the form below and I'll get back to you soon.
+                    I&apos;d love to hear from you! Fill out the form below and I&apos;ll get back to you soon.
                 </p>
+
 
                 <form className="space-y-6">
                     <div className="grid md:grid-cols-2 gap-6">

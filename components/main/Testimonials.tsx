@@ -1,5 +1,6 @@
 import React from 'react'
 import { FaStar } from "react-icons/fa";
+import Image from 'next/image';
 
 
 const testimonials = [
@@ -41,7 +42,7 @@ const Testimonials = () => {
                         key={i}
                         className="bg-transparent border-2 border-blue-600 rounded-2xl shadow-lg hover:shadow-2xl cursor-pointer transition duration-300 p-8 text-center transform hover:-translate-y-2 hover:scale-105"
                     >
-                        <img
+                        <Image
                             src={person.image}
                             alt={person.name}
                             className="w-24 h-24 rounded-full object-cover border-4 border-blue-600 mx-auto mb-4"
