@@ -46,6 +46,8 @@ const Testimonials = () => {
                             src={person.image}
                             alt={person.name}
                             className="w-24 h-24 rounded-full object-cover border-4 border-blue-600 mx-auto mb-4"
+                            width={24}
+                            height={24}
                         />
                         <h4 className="text-xl font-semibold mb-2">{person.name}</h4>
 

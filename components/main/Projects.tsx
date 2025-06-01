@@ -90,6 +90,8 @@ const Projects = () => {
                     src={item.img}
                     className="md:h-full h-28 w-full object-cover rounded-[20px]"
                     alt={`${project.title} ${i}`}
+                    width={300}       // kerakli kenglik
+                    height={400}      // kerakli balandlik
                   />
                   <div className="absolute inset-0 bg-gray-900 bg-opacity-50 group-hover:bg-opacity-0 transition-all duration-300 rounded-[20px]"></div>
                 </div>

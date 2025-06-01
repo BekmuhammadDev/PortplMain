@@ -78,24 +78,7 @@ export const Skill_data = [
       height: 40,
     },
   
-  ];
-  
-  export const Socials = [
-    {
-      name: "Discord",
-      src: "/instagram.svg",
-    },
-    {
-      name: "Facebook",
-      src: "/facebook.svg",
-    },
-    {
-      name: "Instagram",
-      src: "/discord.svg",
-    },
-  ];
-  
-  
+  ]; 
   
   export const Frontend_skill = [
     {

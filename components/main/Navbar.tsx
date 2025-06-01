@@ -1,6 +1,30 @@
 'use client';
+import { FaInstagram, FaGithub, FaTelegramPlane, FaLinkedin } from "react-icons/fa";
 
-import { Socials } from "@/constants";
+export const Socials = [
+  {
+    name: "Instagram",
+    icon: <FaInstagram />,
+    link: "https://instagram.com/yourusername",
+  },
+  {
+    name: "GitHub",
+    icon: <FaGithub />,
+    link: "https://github.com/BekmuhammadDev",
+  },
+  {
+    name: "Telegram",
+    icon: <FaTelegramPlane />,
+    link: "https://t.me/BekMuhammad88",
+  },
+  {
+    name: "LinkedIn",
+    icon: <FaLinkedin />,
+    link: "https://www.linkedin.com/in/bekmuhammad-aripov-857ba0311/",
+  },
+];
+
+// import { Socials } from "@/constants";
 import Image from "next/image";
 import React from "react";
 
@@ -8,7 +32,7 @@ const Navbar = () => {
   return (
     <div className="w-full h-[65px] fixed top-0 shadow-lg shadow-[#2A0E61]/50 bg-[#03001417] backdrop-blur-md z-50 px-4 md:px-10">
       <div className="w-full h-full flex flex-wrap  items-center justify-between mx-auto">
-        
+
         {/* Logo */}
         <a href="#about-me" className="flex items-center gap-2">
           <Image
@@ -32,19 +56,21 @@ const Navbar = () => {
         </div>
 
         {/* Social Icons */}
-        <div className="flex items-center gap-4 ml-auto md:ml-0">
+        <div className="flex items-center gap-4 ml-auto md:ml-0 text-xl">
           {Socials.map((social) => (
-            <a href={social.name} key={social.name} target="_blank" rel="noopener noreferrer">
-              <Image
-                src={social.src}
-                alt={social.name}
-                width={24}
-                height={24}
-                className="hover:scale-110 transition-transform"
-              />
+            <a
+              href={social.link}
+              key={social.name}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:scale-110 transition-transform text-white"
+            >
+              {social.icon}
             </a>
           ))}
         </div>
+
+
       </div>
     </div>
   );
