@@ -29,8 +29,6 @@ const Projects = () => {
         { img: testy, link: 'https://testy.uz/' },
         { img: vanguardai, link: 'https://test-autoupdate.bakhodirastanov.com/cabinet' },
         // { img: Qshostel, link: 'https://hotelweb77.netlify.app/' },
-        // { img: Commoncountry, link: 'https://countrycommon.netlify.app/' },
-        // { img: Chipdip, link: 'https://chip-dip-project.netlify.app/' },
       ],
     },
     {
