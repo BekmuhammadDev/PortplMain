@@ -16,10 +16,23 @@ import Island from "@/assets/images/Island.png"
 import valuecommon from "@/assets/images/valuecommon.png"
 import weather from "@/assets/images/WeatherPro.png"
 import zetmarket from "@/assets/images/Zetmarket.png"
+import testy from "@/assets/images/testy.png"
+import vanguardai from "@/assets/images/vanguardai.png"
 
 const Projects = () => {
 
   const projectsData = [
+      {
+      title: 'Projects',
+      description: 'Website',
+      images: [
+        { img: testy, link: 'https://testy.uz/' },
+        { img: vanguardai, link: 'https://test-autoupdate.bakhodirastanov.com/cabinet' },
+        // { img: Qshostel, link: 'https://hotelweb77.netlify.app/' },
+        // { img: Commoncountry, link: 'https://countrycommon.netlify.app/' },
+        // { img: Chipdip, link: 'https://chip-dip-project.netlify.app/' },
+      ],
+    },
     {
       title: 'Projects',
       description: 'webApps',

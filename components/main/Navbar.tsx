@@ -5,7 +5,7 @@ export const Socials = [
   {
     name: "Instagram",
     icon: <FaInstagram />,
-    link: "https://instagram.com/yourusername",
+    link: "https://www.instagram.com/bekmuhammad2303?igsh=MXM5aG1tOWtuemZvNA==",
   },
   {
     name: "GitHub",
